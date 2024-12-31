@@ -13,7 +13,8 @@
     name: 'AppHome',
     data() {
       return {
-        tit: ['신제품', '인기상품']
+        tit: ['신제품', '인기상품'],
+        
       }
     }
   }
