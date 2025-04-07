@@ -17,7 +17,7 @@
         el: '#root',
         data() {
             return {
-                word: '제로초',
+                word: '빵',
                 result: '',
                 value: '',
             }

@@ -1,5 +1,5 @@
 <template>
-    <section class="contents" @scroll="checkScroll">
+    <section class="contents" ref="scrollContainer" @scroll="checkScroll">
         <div v-for="(menu,i) in pdt" :key="i" class="menu">
         <a href="#">
             <img :src="menu.image" class="pdt_thumb">
@@ -65,10 +65,10 @@ export default {
 <style lang="scss" scoped>
     .contents {
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 7rem 2rem;
+
         .menu {
-            beforeUnmount
             .pdt_thumb {
                 width: 100%;
             }
